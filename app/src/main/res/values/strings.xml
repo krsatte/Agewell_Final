@@ -1,0 +1,39 @@
+<resources>
+    <!-- ImageButtons -->
+    <string name="app_name">Agewell_Final2</string>
+    <string name="alarm_text">Go to Alarm</string>
+    <string name="calendar_text">Go to Calendar</string>
+    <string name="camera_text">Go to Camera</string>
+    <string name="contacts_text">Go to Contacts</string>
+    <string name="health_journal_text">Go to Health Journal</string>
+    <string name="medication_tracker_text">Go to Medication Tracker</string>
+    <string name="notes_text">Go to Notes</string>
+    <string name="password_manager_text">Go to Password Manager</string>
+    <string name="notification_text">Go to Notifications</string>
+    <string name="home_text">Go to Home</string>
+    <string name="settings_text">Go to Settings</string>
+    <string name="back_text">Go Back</string>
+    <string name="name_text">Agewell</string>
+    <string name="bird_text">Agewell Logo</string>
+    <string name="hamburger_text">Open Menu</string>
+
+    <!-- TextView -->
+    <string name="app_name2">Agewell_Final</string>
+    <string name="alarm_text2">Alarm</string>
+    <string name="calendar_text2">Calendar</string>
+    <string name="camera_text2">Camera</string>
+    <string name="contacts_text2">Contacts</string>
+    <string name="health_journal_text2">Health Journal</string>
+    <string name="medication_tracker_text2">Medication Tracker</string>
+    <string name="notes_text2">Notes</string>
+    <string name="password_manager_text2">Password Manager</string>
+    <string name="notification_text2">Notifications</string>
+    <string name="home_text2">Home</string>
+    <string name="settings_text2">Settings</string>
+    <string name="back_text2">Back</string>
+    <string name="name_text2">Name</string>
+    <string name="bird_text2">Bird</string>
+    <string name="hamburger_text2">Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

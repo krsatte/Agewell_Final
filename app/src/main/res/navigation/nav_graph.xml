@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.example.agewell_final.AlarmFragment"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.agewell_final.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.agewell_final.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.agewell_final.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+    <fragment
+        android:id="@+id/healthJournalFragment"
+        android:name="com.example.agewell_final.HealthJournalFragment"
+        android:label="fragment_health_journal"
+        tools:layout="@layout/fragment_health_journal" />
+    <fragment
+        android:id="@+id/medicationTrackerFragment"
+        android:name="com.example.agewell_final.MedicationTrackerFragment"
+        android:label="fragment_medication_tracker"
+        tools:layout="@layout/fragment_medication_tracker" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.agewell_final.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" />
+    <fragment
+        android:id="@+id/passwordManagerFragment"
+        android:name="com.example.agewell_final.PasswordManagerFragment"
+        android:label="fragment_password_manager"
+        tools:layout="@layout/fragment_password_manager" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.agewell_final.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.agewell_final.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.agewell_final.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>
