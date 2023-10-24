@@ -60,4 +60,9 @@
         android:name="com.example.agewell_final.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/alarmCreateFragment"
+        android:name="com.example.agewell_final.AlarmCreateFragment"
+        android:label="fragment_alarm_create"
+        tools:layout="@layout/fragment_alarm_create" />
 </navigation>
