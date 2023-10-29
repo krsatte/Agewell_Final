@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".AlarmFragment">
 
     <!-- Top Banner -->
     <LinearLayout
@@ -17,7 +17,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.1">
+        app:layout_constraintHeight_percent="0.1"
+        >
 
         <!-- Left Image -->
         <ImageView
@@ -25,7 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/bird"
+            android:src="@drawable/back"
             android:contentDescription="@string/bird_text" />
 
         <!-- Middle Image -->
@@ -46,8 +47,32 @@
             android:layout_weight="1"
             android:background="@android:color/transparent" />
 
+
     </LinearLayout>
 
-    <!-- Place your stuff here -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="39dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FontSize"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="192dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

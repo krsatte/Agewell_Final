@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HealthJournalFragment">
+    tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Top Banner -->
+    <LinearLayout
+        android:id="@+id/topBanner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/light_gray_rounded_corner"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1">
+
+        <!-- Left Image -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/back"
+            android:contentDescription="@string/bird_text" />
+
+        <!-- Middle Image -->
+        <ImageView
+            android:id="@+id/nameImageMainPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:scaleX="0.8"
+            android:scaleY="0.7"
+            android:src="@drawable/name"
+            android:contentDescription="@string/name_text" />
+
+        <!-- Placeholder -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hamburger"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+    <!-- Place your stuff here -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textView2"
+        android:layout_width="277dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/HealthEntry"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="93dp" />
 
-</FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

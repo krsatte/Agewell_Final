@@ -34,6 +34,16 @@
     <string name="name_text2">Name</string>
     <string name="bird_text2">Bird</string>
     <string name="hamburger_text2">Menu</string>
+    <string name="Calendar_text">CALENDAR</string>
+    <string name="Contact">CONTACTS</string>
+    <string name="HealthEntry">HEALTH ENTRIES</string>
+    <string name="Medication">MEDICATION</string>
+    <string name="Notes">NOTES</string>
+    <string name="Notifications">NOTIFICATIONS</string>
+    <string name="FontSize">Font Size</string>
+    <string name="Passwords">PASSWORDS</string>
+    <string name="settings">SETTINGS</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="alarm">ALARM</string>
