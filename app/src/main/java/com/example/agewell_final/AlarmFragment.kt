@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -37,6 +38,30 @@ class AlarmFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_alarm, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val hamburgerMenu: ImageView = view.findViewById(R.id.hamburgerAlarm)  // Ensure this is the correct ID for the hamburger menu
+
+        hamburgerMenu.setOnClickListener {
+            val popup = PopupMenu(requireContext(), it)
+            popup.menuInflater.inflate(R.menu.alarm_dropdown_menu, popup.menu)
+
+            popup.setOnMenuItemClickListener { menuItem ->
+                when (menuItem.itemId) {
+                    R.id.create_alarm -> {
+                        // Navigate to the alarmCreateFragment
+                        // If you're using Navigation Component, this is an example. Adjust as needed.
+                        val action = AlarmFragmentDirections.actionAlarmFragmentToAlarmCreateFragment()
+                        findNavController().navigate(action)
+                        true
+                    }
+                    else -> false
+                }
+            }
+            popup.show()
+        }
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of
